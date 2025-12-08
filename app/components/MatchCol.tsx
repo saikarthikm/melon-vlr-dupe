@@ -8,7 +8,7 @@ export function MatchCol({ items }: { items: Match[] }) {
       render={(t) => (
         <div
           key={t.id}
-          className="bg-zinc-800 p-3 rounded cursor-pointer hover:bg-zinc-700"
+          className="bg-zinc-800 p-3 rounded cursor-pointer hover:bg-zinc-700 bg-panel border border-border"
         >
           <div className="text-sm">{t.id}</div>
           <div className="text-xs text-zinc-400">{t.teamA}</div>
