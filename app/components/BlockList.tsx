@@ -4,9 +4,5 @@ type BlockListProps<T> = {
 };
 
 export function BlockList<T>({ items, render }: BlockListProps<T>) {
-  return (
-    <div className="space-y-2">
-      <>{items.map(render)}</>
-    </div>
-  );
+  return <div className="my-2">{items.map(render)}</div>;
 }

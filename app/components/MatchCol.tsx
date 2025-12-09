@@ -8,11 +8,16 @@ export function MatchCol({ items }: { items: Match[] }) {
       render={(t) => (
         <div
           key={t.id}
-          className="bg-zinc-800 p-3 rounded cursor-pointer hover:bg-zinc-700 bg-panel border border-border"
+          className="bg-item p-3 rounded cursor-pointer hover:bg-zinc-700 border border-border flex flex-row justify-between"
         >
-          <div className="text-sm">{t.id}</div>
-          <div className="text-xs text-zinc-400">{t.teamA}</div>
-          <div className="text-xs text-zinc-400">{t.teamB}</div>
+          <div className="grid grid-cols-1">
+            <div className="text-xs ">{t.teamA}</div>
+            <div className="text-xs ">{t.teamB}</div>
+          </div>
+          <div>
+            <div className="text-xs text-red-500 font-bold">{t.status}</div>
+            <div className="text-xs text-green-500">{t.time}</div>
+          </div>
         </div>
       )}
     />

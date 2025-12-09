@@ -1,13 +1,15 @@
 export type Thread = {
   id: string;
   title: string;
-  count: number;
+  comments: number;
 };
 
 export type NewsItem = {
   id: string;
   title: string;
   date: string;
+  region: string;
+  commentCount: number;
 };
 
 export type Match = {
@@ -18,6 +20,8 @@ export type Match = {
   score?: string;
   live?: "" | "LIVE";
   earnings?: number;
+  time?: string;
+  status?: string;
 };
 
 export type Event = {

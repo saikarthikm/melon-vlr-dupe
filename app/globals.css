@@ -8,6 +8,7 @@
   --column: #2f353b;
   --panel: #3a4046;
   --hover: #454b52;
+  --item: #27272A
   --border: rgba(255, 255, 255, 0.14);
 }
 
@@ -18,6 +19,7 @@
   --color-column: var(--column);
   --color-panel: var(--panel);
   --color-hover: var(--hover);
+  --color-item: var(--item);
   --color-border: var(--border);
 
   --font-sans: var(--font-geist-sans);
@@ -32,6 +34,7 @@
     --column: #2f353b;
     --panel: #3a4046;
     --hover: #454b52;
+    --item: #27272A;
     --border: rgba(255, 255, 255, 0.14);
   }
 }

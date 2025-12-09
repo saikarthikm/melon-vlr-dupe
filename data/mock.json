@@ -1,19 +1,21 @@
 {
   "threads": [
-    { "id": "t1", "title": "no politics/religion", "count": 1 },
-    { "id": "t2", "title": "Pickems: SVL 25 Group Stage", "count": 13 }
+    { "id": "t1", "title": "no politics/religion", "comments": 1 },
+    { "id": "t2", "title": "Pickems: SVL 25 Group Stage", "comments": 13 }
   ],
 
   "news": [
     {
       "id": "n1",
       "title": "Papi departs Global Esports",
-      "date": "2025-12-05"
+      "date": "2025-12-05",
+      "commentCount": 24
     },
     {
       "id": "n2",
       "title": "ULF Esports parts with head coach Vlad",
-      "date": "2025-12-04"
+      "date": "2025-12-04",
+      "commentCount": 4
     }
   ],
 
@@ -23,13 +25,16 @@
       "teamA": "FUT Esports",
       "teamB": "Eternal Fire",
       "status": "LIVE",
-      "score": "0 - 1"
+      "score": "13-0",
+      "time": "21m"
     },
     {
       "id": "m2",
       "teamA": "Oxyuji",
       "teamB": "BONK",
-      "time": "54m"
+      "time": "54m",
+      "status": "",
+      "score": "12-14"
     }
   ],
 

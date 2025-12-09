@@ -13,10 +13,14 @@ const news = data.news as NewsItem[];
 export default function Home() {
   return (
     <main>
-      <ThreadCol items={threads} />
-      <NewsCol items={news} />
-      <EventCol items={events} />
-      <MatchCol items={matches} />
+      <div className="mx-45 my-10">
+        <div className="grid grid-cols-[200px_1fr_250px_200px] space-x-3 bg-column p-5 gap-5">
+          <ThreadCol items={threads} />
+          <NewsCol items={news} />
+          <MatchCol items={matches} />
+          <EventCol items={events} />
+        </div>
+      </div>
     </main>
   );
 }
