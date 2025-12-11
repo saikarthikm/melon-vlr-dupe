@@ -5,7 +5,8 @@
   --foreground: #171717;
 
   /* VLR dark theme layers */
-  --column: #2f353b;
+  --column: #333;
+  --nav: #292e32;
   --panel: #3a4046;
   --hover: #454b52;
   --item: #27272A
@@ -16,6 +17,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  --color-nav: var(--nav);
   --color-column: var(--column);
   --color-panel: var(--panel);
   --color-hover: var(--hover);
@@ -31,12 +33,17 @@
     --background: #2d3338;
     --foreground: #ededed;
 
+    --nav: #333;
     --column: #2f353b;
     --panel: #3a4046;
     --hover: #454b52;
     --item: #27272A;
     --border: rgba(255, 255, 255, 0.14);
   }
+}
+
+* {
+  font-size: small;
 }
 
 body {

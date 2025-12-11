@@ -1,18 +1,32 @@
+import Image from "next/image";
+import logo from "@/public/logo_header.png";
+
 function Navbar() {
   return (
-    <div className="flex flex-row justify-between mx-45 space-x-3 bg-column p-5 gap-5">
-      <div className="flex flex-row gap-5">
-        <div>Logo</div>
-        <div>Search Bar</div>
-      </div>
-      <div>NavLinks</div>
-      <div className="flex flex-row gap-5">
-        <div>Night Mode & Spoilers</div>
-        <div>Profile</div>
-        <div>Inbox</div>
-        <div>Dropdown</div>
-      </div>
-    </div>
+    <header className="bg-nav border border-border p-2.5">
+      <nav className="mx-55 flex justify-between px-5">
+        <div className="flex gap-10 px-5">
+          <Image src={logo} alt={"Logo"} height={40} quality={80}></Image>
+          <input className="border border-border"></input>
+
+          <ul className="flex gap-5">
+            <li>Forums</li>
+            <li>Matches</li>
+            <li>Events</li>
+            <li>Rankings</li>
+            <li>Stats</li>
+          </ul>
+        </div>
+        <div>
+          <ul className="flex gap-5">
+            <li>Night Mode & Spoilers</li>
+            <li>Profile</li>
+            <li>Inbox</li>
+            <li>Dropdown</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 }
 
