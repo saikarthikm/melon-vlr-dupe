@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="mx-55">
+      <div className="mx-45">
         <div className="grid grid-cols-[200px_1fr_250px_200px] space-x-3 bg-column p-5 gap-5">
           <ThreadCol items={threads} />
           <NewsCol items={news} />
